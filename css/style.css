@@ -1,0 +1,183 @@
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+p {
+  margin: 0px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.play-body {
+  background-color: crimson;
+  font-family: sans-serif;
+}
+
+.play-card__value {
+  /* Запрещение выделения текста */
+
+  /* Modern */
+  user-select: none;
+
+  /* For IE */
+  -ms-user-select: none;
+
+  /* For Mozilla */
+  -moz-user-select: none;
+
+  /* For Chrome/Opera */
+  -webkit-user-select: none;
+}
+
+
+.container {
+  max-width: 1720px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+
+}
+
+.hidden{
+  display: none;
+}
+
+.play-card {
+  position: relative;
+  width: 10%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  background-color: lightpink;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.play-card__value-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.play-card__value {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 32px;
+}
+
+.play-card--close::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 8px;
+  background-color:mediumpurple;
+}
+
+.index-body {
+  padding: 0 10px;
+  margin: 0;
+  background-color: moccasin;
+  font-family: sans-serif;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 10px;
+  max-width: 650px;
+  margin: 100px auto 0;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+.form__content {
+  padding-left: 20px;
+}
+
+.form__label {
+  margin-bottom: 15px;
+  min-width: 600px;
+  min-height: 100px;
+}
+
+.input--card-count {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  max-width: 165px;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid;
+  text-align: center;
+  align-items: center;
+}
+
+.form-submit {
+  background-color: lightpink;
+  color: black;
+  min-width: 100px;
+  min-height: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 200;
+  font-size: 2.2em;
+}
+
+.form-submit:hover{
+  box-shadow: 0 5px 5px 5px crimson;
+}
+
+
+.wrapper-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  width: 120px;
+  height: 200px;
+  margin-right: 35px;
+  margin-bottom: 35px;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 128px;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 0 5px #2f2d2d;
+}
+.input{
+  font-weight: 200;
+  font-size: 2.2em;
+  width: 200px;
+  max-height: 50px;
+}
+
